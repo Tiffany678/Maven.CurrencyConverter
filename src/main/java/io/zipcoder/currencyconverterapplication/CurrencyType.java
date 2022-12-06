@@ -1,5 +1,7 @@
 package io.zipcoder.currencyconverterapplication;
 
+import java.util.Objects;
+
 public enum CurrencyType {
     AUSTRALIAN_DOLLAR(2.70),
     CANADIAN_DOLLAR(2.64),
@@ -25,6 +27,10 @@ public enum CurrencyType {
     }
 
     public static CurrencyType getTypeOfCurrency(ConvertableCurrency currency) {
-        return null;
+        for (CurrencyType ct : CurrencyType.values()) {
+            if (Objects.equals(currency.getCurrencyType(), CurrencyType.valueOf(String.valueOf(ct))))
+                return CurrencyType.valueOf(String.valueOf(ct));
+        }
+        return CurrencyType.EURO;
     }
 }

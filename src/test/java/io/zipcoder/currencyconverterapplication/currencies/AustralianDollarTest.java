@@ -25,36 +25,43 @@ public class AustralianDollarTest implements CurrencyTestInterface {
 
     @Test
     public void testAustralianConversion() {
+
         testConversion(CurrencyType.AUSTRALIAN_DOLLAR, 1.0);
     }
 
     @Test
     public void testCanadianDollarConversion() {
+
         testConversion(CurrencyType.CANADIAN_DOLLAR, .9777777777777777);
     }
 
     @Test
     public void testChineseYRConversion() {
+
         testConversion(CurrencyType.CHINESE_YR, 5.125925925925926);
     }
 
     @Test
     public void testEuroConversion() {
+
         testConversion(CurrencyType.EURO, .6962962962962962);
     }
 
     @Test
     public void testFrancConversion() {
+
         testConversion(CurrencyType.FRANC, .7481481481481481);
     }
 
     @Test
     public void testPoundConversion() {
+
         testConversion(CurrencyType.POUND, .6074074074074073);
     }
 
     @Test
     public void testRinggitConversion() {
+
         testConversion(CurrencyType.RINGGIT, 3.311111111111111);
     }
 
